@@ -70,7 +70,7 @@ dashPlus = "trill"
       % [81] 2:01
       e8) e16 e e e | a8 e16 cs d b | cs b cs d e8~ |
       e16 fs e d e b | cs d e d cs b | a b gs a b gs | a gs a b cs8~ | \break
-      cs16 d cs a b gs | a gs bs gs a cs | b d cs b cs e | d e fs g a8~ |
+      cs16 d cs a b gs | a gs fs gs a cs | b d cs b cs e | d e fs g a8~ |
       a a,16 gs a8~ | a16 b cs d e cs | d b g'8 cs, | b fs r |
 
       % [96] 2:16
