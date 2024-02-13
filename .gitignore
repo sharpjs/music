@@ -1,3 +1,4 @@
 # Lilypond output
 *.log
 *.pdf
+lilypond-tmp*
