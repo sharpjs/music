@@ -15,7 +15,7 @@
   }
 }
 
-dashPlus = "trill"
+dashPlus = \trill
 
 % Time reference: https://www.youtube.com/watch?v=8da0KuW3SE0
 
