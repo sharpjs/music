@@ -3,11 +3,11 @@
 
 \header {
   dedication = #f % "Header"
-  title      = "Dies Irae"
-  subtitle   = "Grand Motet   LWV 64/1"
+  title      = "Dies irae"
+  subtitle   = "Grand motet   LWV 64/1"
   composer   = "J. B. Lully"
   opus       = #f % unused due to placement
-  instrument = "Premier dessus de violon"
+  instrument = "Premier dessus de violon, hautbois et flûte"
   copyright  = #f % unused due to placement
   tagline    = \markup \center-column {
     "Engraving © 2024 Jeffrey Sharp. Licensed under CC BY-SA 4.0."
