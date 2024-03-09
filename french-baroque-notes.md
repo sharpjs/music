@@ -1,5 +1,22 @@
 # French Baroque Notes
 
+## Parts
+
+Source: https://imslp.org/wiki/User:NicolasSceaux/French_baroque_instruments_and_voices
+
+Instruments recognized via tessitura.
+
+| Term                | Voice             | Instrument
+|:--------------------|:------------------|------------------------------------
+| dessus              | G2 soprano        | G1/C1 violin, oboe, flute
+| bas-dessus          | C1 mezzo-soprano  |
+| petite haute-contre | C2 contralto      |
+| haute-contre        | C3 countertenor   | C1/C2 violin/viola, oboe d'amore
+| taille              | C4 tenor          | C2/C3 viola, oboe da caccia, flute
+| basse-taille/quinte | F3 baritone       | C3/C3 quinte
+| basse               | F4 bass           | F4/F4 cello
+| continue            |                   | F4/F4 continuo
+
 ## Tempi
 
 | Term          | Definition
