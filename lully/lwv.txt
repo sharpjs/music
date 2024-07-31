@@ -1,130 +1,134 @@
 Works by Jean-Baptiste Lully
+============================
 
-LWV  1    Le temps
-LWV  2    Les plaisirs
-LWV  3    Dialogue de la Guerre avec la Paix
-LWV  4    Les bienvenus
-LWV  5    La revente des habits de ballet et de comédie
-LWV  6    Psyché, ou La puissance de l'amour
-LWV  7    La galanterie du temps
-LWV  8    Amour malade
-LWV  9    Alcidiane
-LWV 10    Première marche des mousquetaires
-LWV 11    La raillerie
-LWV 12    Intermèdes de Xerxes
-LWV 13    Ballet mascarade
-LWV 14    L'impatience
-LWV 15    Les saisons
-LWV 16    Les facheux
-LWV 17    L'Hercule amoureux
-LWV 18    Les arts
-LWV 19    Les Noces de village
-LWV 20    Le mariage forcé
-LWV 21    Les amours déguisés
-LWV 22    Plaisirs de l'Ile enchantée
-LWV 23    Entractes d'Œdipe
-LWV 24    Mascarade du Capitaine
-LWV 25    Miserere
-LWV 26    O Lachrymae fideles
-LWV 27    La naissance de Vénus
-LWV 28    Les gardes, ou Les délices de la campagne
-LWV 29    L'Amour médecin
-LWV 30    Le triomphe de Bacchus dans les Indes
-LWV 31    Branles
-LWV 32    Les muses
-LWV 33    La pastorale comique
-LWV 34    Le Sicilien, ou L'Amour peintre
-LWV 35    18 Trios pour le coucher du roi
-LWV 36    Le carnaval
-LWV 37    Plaude laetare Gallia
-LWV 38    George Dandin
-LWV 39    La grotte de Versailles
-LWV 40    Flore
-LWV 41    Monsieur de Pourceaugnac
-LWV 42    Les amants magnifiques
-LWV 43    Le bourgeois gentilhomme / Der Bürger als Edelmann
-LWV 44    Marches et batteries de tambour
-LWV 45    Psyché
-LWV 46    Ballet des ballets
-LWV 47    Le triomphe de l’amour et de Bachus (pastorale, 1672, as described and named in the manuscript)
-LWV 48    Marche
-LWV 49    Cadmus et Hermione
-LWV 50    Alceste, ou Le triomphe d'Alcide
-LWV 51    Thésée
-LWV 52    Le carnaval
-LWV 53    Atys
-LWV 54    Isis
-LWV 55    Te Deum
-LWV 56    Psyché
-LWV 57    Bellérophon
-LWV 58    Proserpine
-LWV 59    Le triomphe de l'amour
-LWV 60    Persée
-LWV 61    Phaëton
-LWV 62    De profundis
-LWV 63    Amadis
-LWV 64    1. Dies irae
-          2. Benedictus Dominus
-LWV 65    Roland
-LWV 66    Marches pour le régiment de Savoie
-LWV 67    Quare fremuerunt
-LWV 68    Idylle sur la paix
-LWV 69    Le temple de la paix
-LWV 70    Pièces de symphonie
-LWV 71    Armide
-LWV 72    Airs pour le carrousel de Monseigneur
-LWV 73    Acis et Galatée / Acis und Galatea
-LWV 74    Achille et Polyxène
-LWV 75    Marches
-LWV 76     1. Ingrate bergère
-           2. Aunque prodigoas
-           3. Scoca pur tutti
-           4. A la fin petit Desfarges
-           5. D'un beau pêcheur la pêche malheureuse
-           6. Un tendre coeur
-           7. Courage, Amour, la paix est faite
-           8. Non vi è più bel piacer
-           9. Le printemps, aimable Silvie
-          10. Tous les jours cent bergères
-          11. Viens, mon aimable bergère
-          12. Qui les aura, mes secrètes amours
-          13. Où êtes-vous allez, mes belles
-          14. Nous meslons toute notre gloire
-          15. Pendant que ces flambeaux
-          16. La langueur des beaux yeux
-          17. On dit que vos yeux sont trompeurs
-          18. Que vous connaissez peu trop aimable Climène
-          19. Si je n'ay parlé de ma flamme
-          20. En ces lieux je ne vois que des promenades
-          21. Ah qu'il est doux de se rendre
-          22. J'ai fait serment, cruelle, de suivre une autre loi
-          23. Le printemps ramène la verdure
-          24. Depuis que l'on soupire sous l'amoureux empire
-          25. Sans mentir on est bien misérable
-          26. Venerabilis barba capucinorum
-LWV 77     1. Anima Christi
-           2. Ave coeli munus supernum
-           3. Dixit Dominus
-           4. Domine salvum fac regem
-           5. Exaudi Deus deprecationem
-           6. Iste Sanctus
-           7. Laudate pueri Dominum
-           8. Magnificat anima mea
-           9. O dulcissime Domine
-          10. Omnes Gentes plaudite
-          11. O sapientia in misterio
-          12. Regina coeli
-          13. Salve regina
-          14. Domine salvum fac regem
-          15. Exaudiat te Dominus
-          16. Jubilate Deo
-          17. Notus in Judea Deus
-          18. Il faut mourir, pécheur
-          19. Si je n'ay parlé de ma flamme
-          20. En ces lieux je ne vois que des promenades
-          21. Ah qu'il est doux de se rendre
-          22. J'ai fait serment, cruelle, de suivre une autre loi
-          23. Le printemps ramène la verdure
-          24. Depuis que l'on soupire sous l'amoureux empire
-          25. Sans mentir on est bien misérable
-          26. Venerabilis barba capucinorum (air à boire)
+LWV  1  Le temps
+LWV  2  Les plaisirs
+LWV  3  Dialogue de la Guerre avec la Paix
+LWV  4  Les bienvenus
+LWV  5  La revente des habits de ballet et de comédie
+LWV  6  Psyché, ou La puissance de l'amour
+LWV  7  La galanterie du temps
+LWV  8  Amour malade
+LWV  9  Alcidiane
+LWV 10  Première marche des mousquetaires
+LWV 11  La raillerie
+LWV 12  Intermèdes de Xerxes
+LWV 13  Ballet mascarade
+LWV 14  L'impatience
+LWV 15  Les saisons
+LWV 16  Les facheux
+LWV 17  L'Hercule amoureux
+LWV 18  Les arts
+LWV 19  Les Noces de village
+LWV 20  Le mariage forcé
+LWV 21  Les amours déguisés
+LWV 22  Plaisirs de l'Ile enchantée
+LWV 23  Entractes d'Œdipe
+LWV 24  Mascarade du Capitaine
+LWV 25  Miserere
+LWV 26  O Lachrymae fideles
+LWV 27  La naissance de Vénus
+LWV 28  Les gardes, ou Les délices de la campagne
+LWV 29  L'Amour médecin
+LWV 30  Le triomphe de Bacchus dans les Indes
+LWV 31  Branles
+LWV 32  Les muses
+LWV 33  La pastorale comique
+LWV 34  Le Sicilien, ou L'Amour peintre
+LWV 35  18 Trios pour le coucher du roi
+LWV 36  Le carnaval
+LWV 37  Plaude laetare Gallia
+LWV 38  George Dandin
+LWV 39  La grotte de Versailles
+LWV 40  Flore
+LWV 41  Monsieur de Pourceaugnac
+LWV 42  Les amants magnifiques
+LWV 43  Le bourgeois gentilhomme / Der Bürger als Edelmann
+LWV 44  Marches et batteries de tambour
+LWV 45  Psyché
+LWV 46  Ballet des ballets
+LWV 47  Le triomphe de l’amour et de Bachus (pastorale, 1672, as described and named in the manuscript)
+LWV 48  Marche
+LWV 49  Cadmus et Hermione
+LWV 50  Alceste, ou Le triomphe d'Alcide
+LWV 51  Thésée
+LWV 52  Le carnaval
+LWV 53  Atys
+LWV 54  Isis
+LWV 55  Te Deum
+LWV 56  Psyché
+LWV 57  Bellérophon
+LWV 58  Proserpine
+LWV 59  Le triomphe de l'amour
+LWV 60  Persée
+LWV 61  Phaëton
+LWV 62  De profundis
+LWV 63  Amadis
+LWV 64  Dies irae & Benedictus Dominus
+LWV 64  1  Dies irae
+LWV 64  2  Benedictus Dominus
+LWV 65  Roland
+LWV 66  Marches pour le régiment de Savoie
+LWV 67  Quare fremuerunt
+LWV 68  Idylle sur la paix
+LWV 69  Le temple de la paix
+LWV 70  Pièces de symphonie
+LWV 71  Armide
+LWV 72  Airs pour le carrousel de Monseigneur
+LWV 73  Acis et Galatée / Acis und Galatea
+LWV 74  Achille et Polyxène
+LWV 75  Marches
+LWV 76  Airs sérieux et a boire
+         1  Ingrate bergère
+         2  Aunque prodigoas
+         3  Scoca pur tutti
+         4  A la fin petit Desfarges
+         5  D'un beau pêcheur la pêche malheureuse
+         6  Un tendre coeur
+         7  Courage, Amour, la paix est faite
+         8  Non vi è più bel piacer
+         9  Le printemps, aimable Silvie
+        10  Tous les jours cent bergères
+        11  Viens, mon aimable bergère
+        12  Qui les aura, mes secrètes amours
+        13  Où êtes-vous allez, mes belles
+        14  Nous meslons toute notre gloire
+        15  Pendant que ces flambeaux
+        16  La langueur des beaux yeux
+        17  On dit que vos yeux sont trompeurs
+        18  Que vous connaissez peu trop aimable Climène
+        19  Si je n'ay parlé de ma flamme
+        20  En ces lieux je ne vois que des promenades
+        21  Ah qu'il est doux de se rendre
+        22  J'ai fait serment, cruelle, de suivre une autre loi
+        23  Le printemps ramène la verdure
+        24  Depuis que l'on soupire sous l'amoureux empire
+        25  Sans mentir on est bien misérable
+        26  Venerabilis barba capucinorum
+LWV 77  Grands motets
+        1  Anima Christi
+        2  Ave coeli munus supernum
+        3  Dixit Dominus
+        4  Domine salvum fac regem
+        5  Exaudi Deus deprecationem
+        6  Iste Sanctus
+        7  Laudate pueri Dominum
+        8  Magnificat anima mea
+        9  O dulcissime Domine
+       10  Omnes Gentes plaudite
+       11  O sapientia in misterio
+       12  Regina coeli
+       13  Salve regina
+       14  Domine salvum fac regem
+       15  Exaudiat te Dominus
+       16  Jubilate Deo
+       17  Notus in Judea Deus
+       18  Il faut mourir, pécheur
+       19  Si je n'ay parlé de ma flamme
+       20  En ces lieux je ne vois que des promenades
+       21  Ah qu'il est doux de se rendre
+       22  J'ai fait serment, cruelle, de suivre une autre loi
+       23  Le printemps ramène la verdure
+       24  Depuis que l'on soupire sous l'amoureux empire
+       25  Sans mentir on est bien misérable
+       26  Venerabilis barba capucinorum (air à boire)
