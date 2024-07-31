@@ -1,5 +1,5 @@
-\version "2.24.3"
-\language "english"
+\version "2.24.4"
+\language "english" % note names
 
 \paper {
   #(set-paper-size "letter")
@@ -44,6 +44,7 @@ ce  = \markup { \italic "cédez" }
 ma  = \markup { \italic "marque" }
 sim = \textMark \markup { \small \italic "sim." }
 x   = \once \override HorizontalBracketText.text = "*"
+ni  = \once \override HorizontalBracketText.text = \markup { \small \italic "inégales" }
 
 \score {
   \relative c' {
@@ -415,45 +416,40 @@ x   = \once \override HorizontalBracketText.text = "*"
 
     <<
       { \voiceOne
-        e'8. e16 e4 f8 f d d16 d |
-        g8. g16 g8 g c,4 c8 d |
-        e2 g8. g16 g4 |
-        a8 a f f16 f bf8. bf16 bf8 bf16 a |
-        g4 g8 f e4 e |
-        r e8 e f4 f8 f |
-        d d d e c f d g |
-        e4 e8 e c c f16 e d c |
-        b4 b8 e c d b e |
-        cs4 e8 e a4 a8 a |
-        f4 f8 f bf4 bf8 bf |
-        g4 g8 a f g e8. f16 |
-        f4 c8 c f4 f8 f |
-        d4 d8 d g g16 g g8 g |
-        e4 e8 a f g e e |
-        f4 f8 f f8. e16 e8. d16 |
-        d4
+        e'8.-+ e16 e4 f8 f d-+ d16 d | g8. g16 g8 g c,4-+ c8 d | e2 \br
+        g8.\m g16 g4 | a8 a f-+ f16 f bf8. bf16 bf8 bf16 a | g4-+ g8 f e4-+ e |
       }
       \new Voice { \voiceTwo
-        cs8.\mf cs16 cs4 d8 d b b16 b |
-        e8. e16 c8 c a4 a8 b |
-        c2 e8. e16 e4 |
-        f8 f d d16 d g8 d d e16 f |
-        cs4 cs8 d cs4 cs |
-        r cs8 cs d4 a8 d |
-        b b b c a d b b |
-        c4 g8 c a a d16 c b a |
-        gs4 gs8 c a b gs8. a16 |
-        a4 c8 c f4 f8 f |
-        d4 d8 d g4 d8 g |
-        e4 e8 f d bf g c |
-        a4 a8 a d4 a8 d |
-        b4 b8 b e4 b8 e |
-        cs4 cs8 f d d d cs |
-        d4 a8 a d8. e16 cs8. d16 |
-        d4
+        cs8.-+\mf cs16 cs4 d8 d b-+ b16 b | e8. e16 c8 c a4-+ a8 b | c2
+        e8.\m e16 e4 | f8 f d-+ d16 d g8 d d e16 f | cs4-+ cs8 d cs4-+ cs |
       }
     >>
-    \oneVoice r r2 | R1*19 |
+    \oneVoice r
+
+    <<
+      { \voiceOne
+        e8 e \ac e f4 f8 f | d-+ d d e c-+ f d-+ g | e4-+ \br
+        e8 \ag e( d32) c8 c \ni f16\ga e d c\gz | \ac c b4 b8 e c-+ d b-+ e | cs4-+ \br
+        e8 e \ac g a4 a8 a | \ap g f4 f8 f bf4\m bf8 bf | \ap a g4 g8 a f g \ap f16 e8. f16 | f4\m
+        \br c8 c \ac e f4 f8 f | d4-+ d8 d g g16 g g8 g | e4-+ e8 a f-+ g e-+ e | \ap e \br
+        f4 f8 f f8.\m e16 e8.-+ d16 | d4.
+      }
+      \new Voice { \voiceTwo
+        cs8 cs \ac cs d4 a8 d | b-+ b b c a-+ d b-+ b | c4-+
+        g8 \ag c( b32) a8 a d16 c b a | \ac a gs4 gs8 c a-+ b gs8.-+ a16 | a4-+
+        c8 c \ac e f4 f8 f | \ap e d4 d8 d g4\m d8 g | \ap f e4 e8 f d bf g c | a4\m
+        a8 a \ac c d4 a8 d | b4-+ b8 b e4 b8 e | cs4-+ cs8 f d-+ d d cs | \ap cs d4
+        a8 a d8.\m_\ce e16 cs8.-+ d16 |
+        d4.
+      }
+    >>
+    \oneVoice \ca
+    
+    \section
+    \sectionLabel "Vovete"
+    \tempo "gracieusement"
+
+    r8 r2 | R1*19 |
 
     \once \revert Staff.TimeSignature.style
     \time 2/2
@@ -462,9 +458,9 @@ x   = \once \override HorizontalBracketText.text = "*"
 
     \section
     \sectionLabel "Terribili"
+    \tempo "rondement et marqé"
 
-    r8^\markup { \italic "tous marqé" }
-
+    r8^\markup { \italic "tous" }
     f\f \ac d8 c8. c16 c8 c |
     \ac e f8. f16 f8 f e4-- e8 fs |
     g8 g g16 g g8 \ac g f8. f16 f8 f |
