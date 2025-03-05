@@ -24,7 +24,6 @@
   \context {
     \Staff
     \RemoveAllEmptyStaves
-    \override TimeSignature.style = #'single-digit
   }
   \context {
     \Voice
@@ -33,26 +32,36 @@
   }
 }
 
-trill = #prallprall
+%% Ornaments
+%% ref: https://lilypond.org/doc/v2.24/Documentation/notation/list-of-articulations#ornament-scripts
 
-ac = #acciaccatura  % short port-de-voix
-ag = #afterGrace    % chûte
-ap = #appoggiatura  % port-de-voix
-at = #lineprall     % tremblement appuyé
+ac  = #acciaccatura   % port-de-voix (rapide?)
+ap  = #appoggiatura   % port-de-voix [rising] / coulé [falling]
+tr  = #prall          % tremblement
+trr = #prallprall     % tremblement [longer]
+atr = #lineprall      % tremblement appuyé
+m   = #mordent        % pincé
+um  = \prall ^ "*"    % pincé en montant [my notation]
+
+gr  = #grace
+ag  = #afterGrace      % chûte
+
+sf  = ^ \markup { \hspace #0.4 \tiny \flat    }
+sn  = ^ \markup { \hspace #0.4 \tiny \natural }
+ss  = ^ \markup { \hspace #0.4 \tiny \sharp   }
+
 br = #breathe
 ca = #caesura
 fe = #fermata
-ga = #startGroup
-gr = #grace
-gz = #stopGroup
-m  = #mordent       % pincé
 nl = #break
+
+ga = #startGroup
+gz = #stopGroup
 pa = #parenthesize
-um = #prall         % pincé en montant
-tr = #trill         % tremblement simple
-tf = \trill ^ \markup { \tiny \flat    }
-tn = \trill ^ \markup { \tiny \natural }
-ts = \trill ^ \markup { \tiny \sharp   }
+
+aap = #(define-music-function (main grace) (ly:music? ly:music?) #{
+  \afterGrace { #main ( } { #grace ) }
+#})
 
 % mi = #(define-scheme-function (mu) (markup?)
 %   (markup #:italic mu)
@@ -74,9 +83,22 @@ who = #(define-music-function (s) (string?) #{
   <> ^ \markup \italic #s
 #})
 
-expr = \markup { \italic "expr." }
-am   = \markup { \italic "au mouvt." }
-ce   = \markup { \italic "cédez" }
-ma   = \markup { \italic "marque" }
+expr = _ \markup \italic "expr."
+am   = ^ \markup \italic "au mouvt."
+ce   = _ \markup \italic "cédez"
+ma   = _ \markup \italic "marque"
+doux = ^ \markup \italic "doux"
+fort = ^ \markup \italic "fort"
 
-time-c = { \once \revert Staff.TimeSignature.style \time 4/4 }
+timeDefault = #time
+
+timeSingle = #(define-music-function (n) (fraction?) #{
+  \once \override Staff.TimeSignature.style = #'single-digit \timeDefault #n
+#})
+
+time = #(define-music-function (n) (fraction?)
+  (if (and (= 4 (cdr n)) (not (= 4 (car n))))
+    (timeSingle  n) ; single-digit for /4 except 4/4
+    (timeDefault n) ; default for others
+  )
+)
