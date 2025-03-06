@@ -18,6 +18,8 @@
     \override SystemStartBracket.extra-offset = #'(0.5 . 0)
     \override TextMark.font-size              = -1
     \compressEmptyMeasures
+    % Overrides from defauls specified here
+    % https://github.com/lilypond/lilypond/blob/master/scm/time-signature-settings.scm
     \overrideTimeSignatureSettings 4/4 1/4 1,1,1,1 #'()
     \overrideTimeSignatureSettings 2/2 1/4 1,1,1,1 #'()
   }
@@ -35,20 +37,33 @@
 %% Ornaments
 %% ref: https://lilypond.org/doc/v2.24/Documentation/notation/list-of-articulations#ornament-scripts
 
-ac  = #acciaccatura   % port-de-voix (rapide?)
-ap  = #appoggiatura   % port-de-voix [rising] / coulé [falling]
-tr  = #prall          % tremblement
-trr = #prallprall     % tremblement [longer]
-atr = #lineprall      % tremblement appuyé
-m   = #mordent        % pincé
-um  = \prall ^ "*"    % pincé en montant [my notation]
+afterAppogiatura = #(define-music-function (main grace) (ly:music? ly:music?) #{
+  \afterGrace { #main ( } { #grace ) }
+#})
 
-gr  = #grace
-ag  = #afterGrace      % chûte
+gr  = #grace            %
+ac  = #acciaccatura     % port-de-voix (rapide?)
+ap  = #appoggiatura     % port-de-voix (en montant) / coulé (en descendant)
+ag  = #afterGrace       %
+aap = #afterAppogiatura % chûte
 
-sf  = ^ \markup { \hspace #0.4 \tiny \flat    }
-sn  = ^ \markup { \hspace #0.4 \tiny \natural }
-ss  = ^ \markup { \hspace #0.4 \tiny \sharp   }
+m   = #mordent          % pincé
+um  = \prall ^ "*"      % pincé en montant [my notation]
+
+tr  = #prall            % tremblement
+trr = #prallprall       % tremblement prolongé [my term]
+atr = #lineprall        % tremblement appuyé
+tru = #prallup          % tremblement et tour de gosier
+trd = #pralldown        % tremblement et tour de gosier
+utr = #upprall          % tour de gosier et tremblement
+dtr = #downprall        % tour de gosier et tremblement
+
+tu  = #turn             % tour de gosier
+rtu = #reverseturn      % tour de gosier
+
+uf  = ^ \markup { \hspace #0.4 \tiny \flat    }
+un  = ^ \markup { \hspace #0.4 \tiny \natural }
+us  = ^ \markup { \hspace #0.4 \tiny \sharp   }
 
 br = #breathe
 ca = #caesura
@@ -58,10 +73,6 @@ nl = #break
 ga = #startGroup
 gz = #stopGroup
 pa = #parenthesize
-
-aap = #(define-music-function (main grace) (ly:music? ly:music?) #{
-  \afterGrace { #main ( } { #grace ) }
-#})
 
 % mi = #(define-scheme-function (mu) (markup?)
 %   (markup #:italic mu)
@@ -83,12 +94,13 @@ who = #(define-music-function (s) (string?) #{
   <> ^ \markup \italic #s
 #})
 
-expr = _ \markup \italic "expr."
 am   = ^ \markup \italic "au mouvt."
 ce   = _ \markup \italic "cédez"
-ma   = _ \markup \italic "marque"
 doux = ^ \markup \italic "doux"
+expr = _ \markup \italic "expr."
 fort = ^ \markup \italic "fort"
+ma   = _ \markup \italic "marque"
+peu  = _ \markup \italic "peu"
 
 timeDefault = #time
 
