@@ -1,3 +1,6 @@
+% Copyright Jeffrey Sharp
+% SPDX-License-Identifier: CC-BY-SA-4.0
+
 \version "2.24.4"
 \include "../common.ly"
 
@@ -13,11 +16,6 @@
     "Engraving © 2025 Jeffrey Sharp | https://github.com/sharpjs/music | Not associated with Les Épopées"
     "Licensed under CC BY-SA 4.0 | http://creativecommons.org/licenses/by-sa/4.0/"
   }
-}
-
-rtbf = {
-  \once \set suggestAccidentals = ##t
-  \once \hideNotes bf!8 \reverseturn \noBeam
 }
 
 \new Score <<
@@ -210,27 +208,33 @@ rtbf = {
       \section
       \sectionLabel "Sicut erat"
       \tempo "vite"
-
       \time 3/4
 
-      R2.*14 | R2.*5 | R2.*3 |
+      R2.*14 | R2.*5 |
 
-      r4 d\f d | c c c'~ | c bf4.\tr bf8 | a2. |
+      R2.*3 | r4 d\f d | c c c'~ | c bf4.\tr bf8 | a2. |
       R2.*2 | a,4 a b | c2 c4 |
       R2.*2 |
-      r4 e c | d2 b4 | r e e | e4. e8 e4 | e d c | \ac c8 b2 a4-. \br |
 
-      c d e | e4. f8 g4 | g2. |
-      d4.\m d8 e4 | f \ac e8 f4 g | a4. a8 g8. f16 |
+      r4 e c | d2 b4 | r e e | e4. e8 e4 | e d c | \ac c8 b2 a4 \br |
+
+      c d e | e4. f8 g4 | g2. | d4.\m d8 e4 | f \ac e8 f4 g | a4. a8 g8. f16 |
+
       \ac f8 e4 e f | d4. d8 c4 | r a a | e'2 e4 |
       r d d | c4. c8 c4 | r d d | cs2 d4 |
-      R2.*4 |
-      r4 a' g | f e d | c2 d4 | e2 fs4 | g2 f4 | f2 e4 | f2. |
-      R2.*3 |
-      r4 e f | d4. d8 c4 | r a a | e'4. e8 e4 |
-      r d d | c4. c8 c4 | r d d | \ac d8 cs2 d4 | d2\ce cs4 | d2.\fe |
 
+      R2.*4 | r4 a' g | f e d |
+      c2 d4 | e2 fs4 | g2 f4 | f2 e4 | f2. |
+
+      R2.*3 |
+
+      r4 e f | d4. d8 c4 | r a a | e'4. e8 e4 |
+      r d d | c4. c8 c4 | r d d | \ac d8 cs2 d4 |
+      d2\ce cs4 | d2.\fe |
+
+      \tempo lentement
       \time 4/4
+
       \aap d1\ff e16 | d\breve\fe \skip 4*3 |
 
       \fine
@@ -280,8 +284,8 @@ rtbf = {
       r2 | R1*4 | r4
 
       a'8\p a a4\m \aap g { f32 e16 } | fs4\utr
-      a8. a16 \after 8 \rtbf a4\m a8.\tr\uf bf16 | bf4\m
-      \after 8 \rtbf a4 g\tr g8. a16 | a4\m a
+      a8. a16 \after 8 \rta bf!8 a4\m a8.\tr\uf bf16 | bf4\m
+      \after 8 \rta bf!8 a4 g\tr g8. a16 | a4\m a
 
       r2 | R1*2 | r4
 
@@ -421,19 +425,22 @@ rtbf = {
 
       R2.*14 | R2.*5 |
 
-      r4 d\f e | f2 f4 | e2\tr f4 |
-      f4. f8 g4 | c, c e | f2 g4 | \ac g8 a2. | r4 \ac f8 g2 | 
+      r4 d\f e | f2 f4 | e2\tr f4 | f4. f8 g4 | c, c e | f2 g4 | \ac g8 a2. |
+      r4 \ac f8 g2 | r4 d e | \ac e8 f2. | e2 r4 |
+      R2.*2 |
 
-      r4 d e | \ac e8 f2. | e2 r4 | R2. | R2. |
-      r4 g g | g2 g4 | e2 e4 | e4. e8 e4 | e a, a' | gs2\tr a4-. \br |
+      r4 g g | g2 g4 | e2 e4 | e4. e8 e4 | e a, a' | gs2\tr a4 \br |
 
       a2 g4 | g2. | c,4. \ag d8( c16) b4 | b4.\m b8 cs4 | d4. d8 c b | a4. e'8 e8. d16 |
+
       \ac d8 cs4 a' a | g4. g8 g4 | r f f | e2 e4 |
       r4 fs g | g4. g8 a4 | r d, d | a'2 fs4 \br |
 
       a g f | e2 f4 | g f e | d2 e4 | f2 g4 | a2. | 
       a4 g f | e d c | d e f | d g2 | f2. |
+
       R2.*3 |
+
       r4 a a | g4.\tr g8 g4 | r f f | e2 e4 |
       r fs g | g4. g8 a4 | r d, d | a'2 a4 |
       g\ce e2 | \ap e8 fs2.\fe |
