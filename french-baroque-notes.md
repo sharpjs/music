@@ -2,9 +2,10 @@
 
 ## Parts
 
-Source: https://imslp.org/wiki/User:NicolasSceaux/French_baroque_instruments_and_voices
+Sources:
+- [Nicolas Sceaux - French baroque instruments and voices](https://imslp.org/wiki/User:NicolasSceaux/French_baroque_instruments_and_voices)
 
-Instruments recognized via tessitura.
+Instruments were recognized via tessitura.
 
 | Term                | Voice             | Instrument
 |:--------------------|:------------------|------------------------------------
@@ -19,6 +20,9 @@ Instruments recognized via tessitura.
 
 ## Tempi
 
+Sources:
+- Sawkins, 1993 - *Doucement and légèrement: Tempo in French baroque music*
+
 | Term          | Definition
 |:--------------|:-------------------------------------------------------------
 | vite          | lively
@@ -32,26 +36,36 @@ Instruments recognized via tessitura.
 
 ## Ornaments
 
-| Term          | Definition
-|:--------------|:-------------------------------------------------------------
-| coulé         | falling appogiatura (or after-grace on descending third?)
-| port de voix  | rising appogiatura from weak(short) to strong(long) note
-| chûte         | falling after-grace
-| accent        | rising after-grace
-| tremblement   | trill
-|   appuyé      |   falling appogiatura, then trill
-|   subit       |   immediate trill
-|   feint       |   falling(?) appogiature, then morden
-| pincé         | mordent
-| flatté        | vibrato
-| balancement   | tremolo
-| tour de gosier| turn
-| passage       | free-form ornament of several notes
-| diminution    | dividing notes in double or quadruple in renaissance style
-| coulade       | rising or falling appogiatura run of several notes, slurred
-| trait         | same as coulade, but all notes articulated
-| son filé      | long note without variation
-| son enflé     | crescendo
-| son diminué   | diminuendo
-| son glissé    | portamento or glissando
-| sanglot       | glottal stop?
+Sources:
+- [Arger, 1917 - *Les agréments et le rythme*](https://archive.org/details/BSG_4VSUP1784)
+- [Lai, 2021 - List of French vocal ornaments (1650-1750)](https://www.researchcatalogue.net/view/1167751/1169921)
+
+Definitions were not strict, evolved over time, and differed between authors.
+I choose the following definitions:
+
+| Term               | Definition
+|:-------------------|:--------------------------------------------------------
+| port de voix       | rising appoggiatura
+| coulé              | falling appoggiatura
+| accent/plainte     | rising after-appoggiatura
+| chûte              | falling after-appoggiatura, often linking thirds
+| tremblement        | trill
+| tremblement appuyé | falling appoggiatura, then trill
+| tremblement subit  | immediate trill
+| tremblement feint  | falling appoggiatura, then mordent
+| pincé              | lower mordent
+| pincé en montant¹  | upper mordent
+| flatté             | vibrato
+| balancement        | tremolo
+| tour de gosier     | turn
+| passage            | free-form ornament of several notes
+| diminution         | dividing notes in double or quadruple in renaissance style
+| coulade            | rising or falling multi-note appoggiatura run, slurred
+| trait              | rising or falling multi-note appoggiatura run, articulated
+| son filé           | long note without variation
+| son enflé          | crescendo
+| son diminué        | diminuendo
+| son glissé         | portamento or glissando
+| sanglot            | inhalation before note
+
+¹ My term.
