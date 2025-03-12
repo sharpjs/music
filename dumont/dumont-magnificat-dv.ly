@@ -4,6 +4,11 @@
 \version "2.24.4"
 \include "../common.ly"
 
+\paper { 
+  ragged-bottom = ##t
+  %annotate-spacing = ##t
+}
+
 \header {
   dedication = #f % "Header"
   title      = "Magnificat"
@@ -35,7 +40,7 @@
       g1 | a2 d, | r a'~ | a4 g \bar "!" \endPhrase f e |
 
       d1~ | d2 e | a,2. b4 | \ap b8 c2. bf4 | a1\tr\uf |
-      a | bf2. b4 | cs2\tru d2~ | d\ce cs | d1\fe |
+      a | bf2. b4 | cs2\tru d2~ | d\ce cs | d1\fe | \nl
 
       \section
       \sectionLabel "Et exultavit"
@@ -43,7 +48,7 @@
 
       R1*3 |
       r2 r8 f8\f \ac e d d | e8. e16 e4 c8. c16 c4 |
-      r2 r8 e e e | \ac e f f e g \ac g c,4 c |
+      r2 r8 e e e | \ac e f f e g \ac g c,4 c | \nl
       r8 c f f \aap f4 e8 d4 | c8. c16 c4 c2 | c2\mf r2 |
 
       r2 r8 c\f f f | \ac f e4 e r f~ |
@@ -53,6 +58,7 @@
       r4 r8 e f4 f8 d | \ac d c4 c r2 |
       r4 a a a8 c | \ac c bf4 bf bf4. bf8 | a4\ce a' a2\tr\uf | a2\fe
 
+      \pageBreak
       \section
       \sectionLabel "Quia respexit"
       \phraseLabel "Ritournelle"
@@ -60,17 +66,17 @@
 
       \who "vln. seul"
       r8 d,\p d8. e16 | \ap e f8. f16 e8.\tr g16 f2\tr | e2
-      r8 e8 f g | a f c'8. c16 c4 f, | \aap g a16 a4\tru\uf \ap a8 bf2 \pa\m |
+      r8 e8 f g | a f c'8. c16 c4 f, | \aap g a16 a4\tru\uf \ap a8 bf2 \pa\m | \nl
       r8 bf \ag a[( { bf32 a } g8)] a a \ag g8.[( { a64 g } f16)] | \ag e2\trr e8
       \ag a2 a16 | d,4 g4. e8 \ap e f4~ | f\> g \ap g8 a2 | <>\! r2 \endPhrase \bar "!"
 
-      r | R1*4 | r4 
+      r | R1*4 | \nl r4 
 
       c,8.\p c16 c4 cs8.\tr d16 | d4
       fs8. fs16 fs4 fs8. g16 | g4
       f4. f8 e8.\tr f16 | f4\m f
 
-      r2 | R1*2 | r4 
+      r2 | R1*2 | \nl r4 
 
       \tempo "rondement"
       \who "tous"
@@ -79,18 +85,20 @@
       \tempo "gracieusement"
       cs2\tr | R1 | r2 r4
 
-      \tempo "rond."
-      d8 d | c b c d g,4. a8 | b g b b c4 c | e8 d c a b b e e |
+      \tempo "rondement"
+      d8 d | c b c d g,4. a8 | b g b b c4 c \nl | e8 d c a b b e e |
       \ac d cs cs cs cs d4 d | r g8 g e e c c | c4 f8 d e4
       e | d a8\mp a \ac cs d d d d | g,4 g r c | d\< d \after 4 \! d2 |
-      r4 d8\mf d g g g g | \ac g c,4 d8 d cs4\< d | \after 4 \! e2
+      r4 d8\mf d g g g g | \ac g c,4 d8 d cs4\< d | \after 4 \! e2 r2 |
 
-      r2 | r r8 a,8\f a4 | \ag c8. s \noBeam
+      \pageBreak 
+      r r8 a,8\f a4 | \ag c8. s \noBeam
       d16 e8 e e a, e'4 | \ag cs8. s \noBeam
       cs16 d8 d d g e c | \ag c8. s \noBeam
-      f16 d8 g g f \ap f16 e4\ce | d4.\fe
+      f16 d8 g g f \ap f16 e4\ce | d4.\fe \nl \noPageBreak
 
       \section
+      \once \override Score.SectionLabel.extra-offset = #'(-1 . 0)
       \sectionLabel "Et misericordia"
       \tempo "gracieusement"
 
@@ -98,7 +106,7 @@
       f8\mp e\tr \ag a { a32( g) } f8 g | e\tr
       a d, \aap g d c8. b16 b4\tr | a8. \br
       e'16 \ap e f8 f d f e8.\tr f16 | f8. \br
-      c16\doux f8 f \aap d[ { a'32 g } f8] e8.\tr f16 | f8 \br
+      c16\doux f8 f \aap d[ { a'32 g } f8] e8.\tr f16 | \nl \noPageBreak f8 \br
       c\fort \ac b c8. d16 \ap d e8 \br
       e\doux e8.\tr fs16 | \ap fs g8 \br
       d\pa\fort d8. e16 \ap e f8 \br
@@ -108,7 +116,7 @@
       e d8.\tr cs16 d8.\ce e16 | cs1\tr\fe |
 
       \tempo "gravement"
-      R1*9 | R1*8 | R1*9 |
+      R1*9 | R1*8 \nl \noPageBreak | R1*9 |
 
       \section
       \sectionLabel "Fecit potentiam"
@@ -117,14 +125,14 @@
       r8\f f f e d8. d16 d8 d | e8. f16 g4 c,8 d16 e f8 e16 d | e4 e
       r8 f d e | a,8. a16 a8 a a8. a16 a4 | e'2 \ap d8 cs2 |
 
-      R1*2 | r8
+      R1*2 \nl \noPageBreak | r8
 
       a' \ac bf8 c4 g8. a16 bf4 | f8. g16 a4 g8 g bf4 | a2\tr\uf
       r | r8 e \ac e8 f4 d8 g e4\tr | f2\m
 
       r | r2 r8
 
-      cs \ac cs8 d4 | d8 g \ag e4( d32) c8 c e4 | g8 d \ag f4( g32) e2\tr |
+      cs \ac cs8 d4 | d8 g \ag e4( d32) c8 c e4 | g8 d \ag f4( g32) e2\tr | \nl \noPageBreak
 
       R1*3 | r4 r8
 
@@ -134,6 +142,7 @@
       c\mp | \ac c8 d4 \peu\< e8 e f4 f |
       r4\! g4.\f f8 f4 | e\ce d2 cs4\tr | d1\fe\ca |
 
+      \pageBreak
       \section
       \sectionLabel "Deposuit potentes"
       \tempo "rondement"
@@ -143,12 +152,12 @@
       \who "violons"
       r8. a16\mp d8. e16 f8 f \ap f16 e8. d16 | cs8
       cs( d e a,) a' g8.\tr f16 | e8[ e( f g] g[ a f g] | a2) g(\tr | f8[)
-      e( f g] a2~ | a4) g2( fs4 | g8) d( ef4 d2) |
+      e( f g] a2~ | a4) g2( fs4 | g8) d( ef4 d2) | \nl
 
       g, r8 c d e | f a g8.\tr f16 e8 c e8. f16 |
       g4. g8 a4 a8. a16 | bf4 a2 g4 | a2
 
-      r | R1*6 | R1*4 | r8
+      r | R1*6 | R1*2 | \nl | R1*2 | r8
 
       \who "tous"
       f\f e8.\tr d16 c8 d \ap c16 bf4 | a2
@@ -156,13 +165,13 @@
       r | R1 | r8
 
       f'\mf e8.\tr d16 c4 r | r
-      r8 c bf g c c | d4 c8\< bf \ap bf16 a4\f a |
+      r8 c bf g c c | d4 c8\< bf \ap bf16 a4\f a | \nl
 
       R1 | \after 4 \ce r2 r8 a a4 | a1\fe |
 
       \section
       \sectionLabel "Suscepit Israel"
-      \tempo "gracieuesement"
+      \tempo "gracieusement"
 
       \time 3/4
       R2.*7
@@ -170,6 +179,7 @@
       r2\ce r4\fe r4\am | R1*5 | R1*5 |
       <> \tweak extra-offset #'(-5 . 0) \ce R1\fe\ca |
 
+      \nl
       \section
       \sectionLabel "Sicut locutus est"
       \phraseLabel "Symphonie"
@@ -177,7 +187,7 @@
       \tempo "vivement"
       \time 3/4
       R2. | d4\f d c | bf a4.\tr g8 | a4 a' g | f4.\tr f8 e d | cs2.\tr |
-      R2. | a4 a b | c4. b8 c d | e4. g8 a e | f4. g8 a4 | a4. b8 gs4\tr | a2.
+      R2. | a4 a b | c4. b8 c d | \nl \noPageBreak e4. g8 a e | f4. g8 a4 | a4. b8 gs4\tr | a2.
       \endPhrase
 
       R2.*4 | e4 e e | f4.\m f8 f4 | f f e | d2 d4 |
@@ -194,17 +204,19 @@
       a8 b c | d2. | cs2\tr d4~ | d4 cs2\tr | \time 4/4 d2\fe
       \endPhrase 
 
+      \nl
       \section
       \sectionLabel "Gloria"
       \tempo "très majestueusement"
 
       r2 | R1*5 |
       d2.\f d4 | d1 | e |
-      \ag a, { bf64( c d e f g } | a2.) g4( | f)\um e d2~ | d d | d1 \> <>\mp |
+      \ag a, bf8(\glissando | a'2.) g4( | f)\um e d2~ | d d | d1 \> <>\mp |
       R1 | d | c2. c4 | c2.\tr c4 | c2\fe\>
       c~\p | c e | d2.\tr d4 | d1 |
       R1 | a4\mf\< b c2~ | c d | \ap d8 \after 2 \ff e1\ce
 
+      \pageBreak 
       \section
       \sectionLabel "Sicut erat"
       \tempo "vite"
@@ -213,14 +225,14 @@
       R2.*14 | R2.*5 |
 
       R2.*3 | r4 d\f d | c c c'~ | c bf4.\tr bf8 | a2. |
-      R2.*2 | a,4 a b | c2 c4 |
+      R2. \nl R2. | a,4 a b | c2 c4 |
       R2.*2 |
 
-      r4 e c | d2 b4 | r e e | e4. e8 e4 | e d c | \ac c8 b2 a4 \br |
+      r4 e c | d2 b4 | r e e | e4. e8 e4 | e d c | \ac c8 b2 a4 \br | \nl
 
       c d e | e4. f8 g4 | g2. | d4.\m d8 e4 | f \ac e8 f4 g | a4. a8 g8. f16 |
 
-      \ac f8 e4 e f | d4. d8 c4 | r a a | e'2 e4 |
+      \ac f8 e4 e f | d4. d8 c4 | \nl r a a | e'2 e4 |
       r d d | c4. c8 c4 | r d d | cs2 d4 |
 
       R2.*4 | r4 a' g | f e d |
@@ -228,7 +240,7 @@
 
       R2.*3 |
 
-      r4 e f | d4. d8 c4 | r a a | e'4. e8 e4 |
+      r4 e f | d4. d8 c4 | \nl r a a | e'4. e8 e4 |
       r d d | c4. c8 c4 | r d d | \ac d8 cs2 d4 |
       d2\ce cs4 | d2.\fe |
 
@@ -251,8 +263,8 @@
       \ap { a32-> bf } c2\am~ | c e | d1 | cs2\tru d4 e | \ap e16 f4 g a2\tr\uf |
 
       \ag bf1( c16) | a2.\tr\uf g4 | f1 | e1 | c1 |
-      d1 | d2. e4 | e2 \ag a, \tuplet 6/4 { a32( bf c d e f) } |
-      \ac g8 a2.\ce g4 | fs1\trr\fe |
+      d1 | d2. e4 | e2 \aap a, a8 \glissando |
+      \ac g'8 a2.\ce g4 | fs1\trr\fe |
 
       \section
       \sectionLabel "Et exultavit"
@@ -296,13 +308,13 @@
       \tempo "gracieusement"
       e2\tr | R1 | r2 r4
 
-      \tempo "rond."
+      \tempo "rondement"
       d8 d | g f e d e f g f16 e | d8 d g f e e e e | e8. e16 e4 e2 | e4
       e8 e \ac g a a a a | d,4 d8 g g4 g8 g | a4 f e
       a8\mp a | \ac g fs8 fs fs fs \ac fs g4 g | r4 g a a~ | a\< g g fs\! | g2
       r4 g\mf | \after 2 \< a2. f4 | \after 4 \! e2
 
-      r | r r8 e\f \ac e f4 | e8. \noBeam
+      r | r r8 e <>\tweak extra-offset #'(-2 . 0)\f \ac e f4 | e8. \noBeam
       g16 g8 a gs a gs4 | a8. \noBeam
       a16 fs8 fs g d e4 | f8. \noBeam
       f16 f8 g e d \ap d16 e4\ce | d4.\fe
@@ -378,7 +390,7 @@
 
       \section
       \sectionLabel "Suscepit Israel"
-      \tempo "gracieuesement"
+      \tempo "gracieusement"
 
       \time 3/4
       R2.*7
@@ -456,6 +468,7 @@
   >> % ChoirStaff
 
   \new Staff = "hcv" \with {
+    % This staff is a pseudo-ossia at the beginning
     instrumentName = \markup \right-column { "Haut-contre" "de violon" }
   }
   \relative c'' {
@@ -465,8 +478,9 @@
     d2 g, | a d~ | d \ag e4( d16) c4\ce | \after 4 \fe \after 2\am c1 |
     c | a2 \ag bf4( a16) g4 | a1 | a2
     a~ | a g | f4 d a' e | f g a2~ | a g2 | a1 |
-    %r2 d | d2. % g,4~ | g f8 e f4 a | a1\ce | a \fe |
-    %... This staff is a pseudo-ossia at the 
+    r2 d | d2. g,4~ | g f8 e f4 a | a1\ce | a \fe |
+
+    \section
   }
 
 >> % Score
