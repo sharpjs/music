@@ -8,8 +8,9 @@
 \version "2.24.4"
 \language "english" % note names
 
+#(set-default-paper-size "letter")
+
 \paper {
-  #(set-paper-size "letter")
   ragged-bottom = ##t
 }
 
