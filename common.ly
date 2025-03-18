@@ -10,6 +10,27 @@
 
 \paper {
   #(set-paper-size "letter")
+  ragged-bottom = ##t
+}
+
+\header {
+  dedication = #f % header
+  opus       = #f % unused due to placement
+  copyright  = #f % unused due to placement
+  tagline    = \markup \center-column \small {
+    \concat {
+      "Engraving © 2025 Jeffrey Sharp | "
+      \with-url
+        "https://github.com/sharpjs/music"
+        "https://github.com/sharpjs/music"
+    }
+    \concat {
+      "Licensed under CC BY-SA 4.0 | "
+      \with-url
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  }
 }
 
 \layout {

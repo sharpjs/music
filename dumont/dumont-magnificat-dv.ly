@@ -4,19 +4,11 @@
 \version "2.24.4"
 \include "../common.ly"
 
-\paper { 
-  ragged-bottom = ##t
-  %annotate-spacing = ##t
-}
-
 \header {
-  dedication = #f % "Header"
   title      = "Magnificat"
   subtitle   = "Grand motet ~ interprété par Les Epopées"
   composer   = "Henry Dumont"
-  opus       = #f % unused due to placement
   instrument = "Dessus de violon, hautbois et flûtes"
-  copyright  = #f % unused due to placement
   tagline    = \markup \center-column \small {
     \concat {
       "Engraving © 2025 Jeffrey Sharp | "
