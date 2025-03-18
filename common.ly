@@ -59,7 +59,8 @@
   \context {
     \Voice
     \override NoteHead.style                   = #'baroque
-    \override MultiMeasureRest.space-increment = 0 % multi-measure rests same width
+    \override MultiMeasureRest.space-increment =  0 % multi-measure rests same width
+    \override MultiMeasureRest.expand-limit    = 19 % max number of measures in Kirchenpausen
   }
 }
 
