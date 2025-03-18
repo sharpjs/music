@@ -18,8 +18,19 @@
   instrument = "Dessus de violon, hautbois et flûtes"
   copyright  = #f % unused due to placement
   tagline    = \markup \center-column \small {
-    "Engraving © 2025 Jeffrey Sharp | https://github.com/sharpjs/music | Not associated with Les Épopées"
-    "Licensed under CC BY-SA 4.0 | http://creativecommons.org/licenses/by-sa/4.0/"
+    \concat {
+      "Engraving © 2025 Jeffrey Sharp | "
+      \with-url
+        "https://github.com/sharpjs/music"
+        "https://github.com/sharpjs/music"
+      " | Not associated with Les Épopées"
+    }
+    \concat {
+      "Licensed under CC BY-SA 4.0 | "
+      \with-url
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+    }
   }
 }
 
